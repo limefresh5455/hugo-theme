@@ -8,6 +8,18 @@ googleAnalytics = ""  # add your tracking id
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "en"
 
+[params.enableGoogleMaps]
+enable = true
+# Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
+enableGoogleMaps = true
+googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
+
+enableRecaptchaInContactForm = true
+googleRecaptchaKey = "site_key_for_google_recaptcha"
+
+formspree_action = "https://formspree.io/sample/of/endpoint"
+contact_form_ajax = false
+
 # number of words of summarized post content (default 70)
 summaryLength = 70
 
@@ -145,11 +157,17 @@ enable = true
 title = "Trusted Partners" 
 subtitle = "With our Company, you've got a friend in the tech business. We've built long-term relationships with trusted partners so you don't have to." 
 
-
 [taxonomies]
 category = "categories"
 tag = "tags"
-author = "authors"      
+author = "authors"
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+categories = true
+tags = true
+search = true
+
 
 [markup.goldmark.renderer]
 unsafe = true  # allow raw HTML in markdown files

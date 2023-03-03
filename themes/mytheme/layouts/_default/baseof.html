@@ -30,15 +30,17 @@
 
         <section class="recentClientSection">
             <div class="container">
-                {{- partial "our-client.html" . -}}
+                {{- partial "our-client.html" . -}}                
             </div>
         </section> 
 
         <section class="trustPartSection">
             <div class="container">
+                {{- partial "widgets/categories.html" . -}}
                 {{- partial "trusted-partners.html" . -}}
             </div>
         </section> 
+        
 <!-- 
         <div id="content">
         {{- block "main" . }}{{- end }}

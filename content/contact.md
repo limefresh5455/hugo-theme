@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-layout: inner
+layout: contact
 ---
 
 # We are here to help you
