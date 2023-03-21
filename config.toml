@@ -17,6 +17,7 @@ googleMapsApiKey = "AIzaSyAv7Sza8NSp9_l_g8G2vlo0H4ydEPn_2jY"
 enableRecaptchaInContactForm = true
 googleRecaptchaKey = "site_key_for_google_recaptcha"
 
+<<<<<<< HEAD
 # - register your account to https://formspree.io/register
     # - login and create new form
     # - set your form's endpoint url under 'formspree_action' below
@@ -25,6 +26,8 @@ googleRecaptchaKey = "site_key_for_google_recaptcha"
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
+=======
+>>>>>>> 2e7eddb60d5c542a700d2dad8457ba2fdcf55bc5
 formspree_action = "https://formspree.io/sample/of/endpoint"
 contact_form_ajax = false
 
@@ -99,7 +102,10 @@ identifier = "menu.home"
 url        = "/"
 weight     = 1
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2e7eddb60d5c542a700d2dad8457ba2fdcf55bc5
 [[menu.main]]
 name       = "About"
 identifier = "menu.about"
