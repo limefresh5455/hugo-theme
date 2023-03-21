@@ -1,0 +1,27 @@
+{{ if default true .Site.Params.ourclient.enable }}
+{{ if isset .Site.Data "ourclient" }}
+{{ if gt (len .Site.Data.ourclient) 0 }}
+<div class="container" id="ourclient">
+
+    <div class="row">
+        <div class="heading text-center">
+            <h2>{{ .Site.Params.ourclient.title }}</h2>
+        </div>
+    </div>
+
+              
+    <div class="row">
+        {{ range .Site.Data.ourclient }}
+            <div class="feaItem">
+                <a href="{{ .url }}" >
+                    <img src="{{ .image }}" style="width:100%" alt="{{.alt}}">   
+                </a>        
+          </div>
+        {{ end }}
+    </div>
+
+
+</div>    
+{{ end }}
+{{ end }}
+{{ end }}

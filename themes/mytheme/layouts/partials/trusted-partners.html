@@ -1,0 +1,21 @@
+{{ if default true .Site.Params.trustedpartners.enable }}
+{{ if isset .Site.Data "trustedpartners" }}
+{{ if gt (len .Site.Data.trustedpartners) 0 }}
+<div class="container" id="trustedpartners">
+    <div class="row">
+        <div class="heading text-center">
+            <h2>{{ .Site.Params.trustedpartners.title }}</h2>
+            <p>{{ .Site.Params.trustedpartners.subtitle }}</p>
+        </div>
+    </div>              
+    <div class="row">
+        {{ range .Site.Data.trustedpartners }}
+            <div class="feaItem tpar">                
+                    <img src="{{ .image }}" style="width:100%" alt="{{.alt}}">
+            </div>
+        {{ end }}
+    </div>
+</div>    
+{{ end }}
+{{ end }}
+{{ end }}
