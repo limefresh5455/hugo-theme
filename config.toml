@@ -139,7 +139,7 @@ pre = "Get Started"
 weight = 3
 name = "Schedule a Demo"
 url = "#"
-pre = "Schedule a Demo"  
+pre = "Schedule a Demo"
 
 [[menu.herobar]]
 weight = 4
