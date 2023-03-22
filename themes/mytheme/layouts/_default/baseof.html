@@ -5,7 +5,9 @@
         {{- partial "math.html" . -}}
     {{ end }}
     <body>
-        {{- partial "header.html" . -}}
+           {{- partial "header.html" . -}} 
+            <!-- {{- partial "header2.html" . -}}   -->
+           <!-- {{- partial "header3.html" . -}}   -->
         <div class="heroSection">
             <div class="">
                 {{- partial "hero.html" . -}}
@@ -20,14 +22,12 @@
             <div class="container">
                 {{- partial "gallery.html" . -}}
             </div>
-        </section>        
-
+        </section>
         <section class="blogSection">
             <div class="container">
                 {{- partial "recent_posts.html" . -}}
             </div>
-        </section> 
-
+        </section>
         <section class="recentClientSection">
             <div class="container">
                 {{- partial "our-client.html" . -}}                
@@ -38,7 +38,7 @@
                 {{- partial "widgets/categories.html" . -}}
                 {{- partial "trusted-partners.html" . -}}
             </div>
-        </section>
+        </section> 
         {{- partial "footer.html" . -}}
     </body>
 </html>
