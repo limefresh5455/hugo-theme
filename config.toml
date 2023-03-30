@@ -6,7 +6,8 @@ enableEmoji = true
 math = false          # 
 googleAnalytics = ""  # add your tracking id
 # Site language. Available translations in the theme's `/i18n` directory.
-defaultContentLanguage = "en"
+defaultContentLanguage = "fr"
+languageCode = "fr"
 
 [params.enableGoogleMaps]
 enable = true
@@ -35,8 +36,8 @@ summaryLength = 70
 paginate = 10
 
 [params]
-author = ""
-description = ""
+author = "Hugo Developer"
+description = "hugo example site"
 favicon = "favicon.ico"  # path to a .ico to use as favicon
 logo = ""  # url or path to a logo to put in the header
 

@@ -1,6 +1,6 @@
 {{ if isset .Site.Params "recent_posts" }}
 {{ if .Site.Params.recent_posts.enable }}
-<section class="bar background-white no-mb">
+<div class="bar background-white no-mb">
     <div class="container">
 
         <div class="col-md-12">
@@ -20,20 +20,20 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="box-image-text blog">
                         <div class="top">
-                            <div class="image" style="overflow:hidden">
+                            <div width="350" height="260" class="image" style="overflow:hidden">
                                 {{ if isset .Params "banner" }}
                                 
-                                 <img src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
+                                 <img width="350" height="260" src="{{ .Params.banner | relURL }}" class="img-responsive" alt="" >
                                 </a>
                                 {{ else }}
-                                <img src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
+                                <img width="350" height="260" src="{{ "img/placeholder.png" | relURL }}" class="img-responsive" alt="">
                                 {{ end }}
                             </div>
                         
                         </div>
 
                         <div class="content">
-                            <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                            <span class="catTitle"><a href="{{ .Permalink }}">{{ .Title }}</a></span>
                            
                             <div class="clearfix">
                                        
@@ -69,7 +69,7 @@
         </div>
     </div>
     <!-- /.container -->
-</section>
+</div>
 <!-- /.bar -->
 {{ end }}
 {{ end }}

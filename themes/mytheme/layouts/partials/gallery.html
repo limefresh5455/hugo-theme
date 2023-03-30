@@ -2,18 +2,15 @@
 {{ if isset .Site.Data "gallery" }}
 {{ if gt (len .Site.Data.gallery) 0 }}
 <div class="container" id="gallery">
-
     <div class="row">
         <div class="heading text-center">
             <h2>{{ .Site.Params.gallerypage.title }}</h2>
         </div>
-
-        <div class="col-md-12">
-                        
+        <div class="col-md-12">                        
                 <div class="row">
                     {{ range .Site.Data.gallery }}
                         <div class="gitems">
-                        <img src="{{ .image }}" style="width:100%" onclick="openModal();currentSlide('{{ .weight }}')" alt="{{.alt}}" class="hover-shadow cursor">
+                        <img width="260" height="173" src="{{ .image }}" onclick="openModal();currentSlide('{{ .weight }}')" alt="{{.alt}}" class="hover-shadow cursor">
                         <div class="numbertextFront">{{ .title | safeHTML }}</div>
                       </div>
                     {{ end }}
@@ -23,23 +20,15 @@
                 <div class="modal-content">
                     {{ range .Site.Data.gallery }}  
                         <div class="mySlides">                        
-                            <img src="{{ .image }}" style="width:100%" alt="{{.alt}}">
+                            <img width="698" height="400" src="{{ .image }}"  alt="{{.alt}}">
                             <div class="numbertext">{{ .title | safeHTML }}</div>
                         </div> 
-                    {{ end }}    
-                
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>                  
-                
+                    {{ end }}                
+                    <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+                    <span class="next" onclick="plusSlides(1)">&#10095;</span>
                 </div>
                 </div>
-                 
-
-           
-
         </div>
-
-
     </div>
     <!-- /.row -->
 </div>
@@ -100,6 +89,10 @@
     margin-bottom: 20px;
     overflow: hidden;
         text-transform: uppercase;
+}
+.mySlides img {
+    width: 100%;
+    aspect-ratio: 1 / 5;
 }
 /* The Modal (background) */
 .modal {
@@ -214,6 +207,8 @@ img {
 
 img.hover-shadow {
   transition: 0.3s;
+  aspect-ratio: 1 / 5;
+  width: 260px;
 }
 
 .hover-shadow:hover {
@@ -254,7 +249,7 @@ img.hover-shadow {
           dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
+      //dots[slideIndex-1].className += " active";
+     // captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>

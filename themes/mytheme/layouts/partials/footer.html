@@ -18,7 +18,7 @@
             <div class="col-md-4 offset-0 offset-lg-1">
                 <div class="midabout">
                     {{ with .Site.Params.footerInformation}}
-                         <h6>{{ .title }}</h6>
+                         <span class="ftitle">{{ .title }}</span>
                     {{ end }}     
                     <ul>
                         <li>
@@ -37,7 +37,7 @@
             <div class="col-md-4">
                 <div class="rightabout">                
                 {{ with .Site.Params.footerContactus}}
-                    <h6>{{ .title }}</h6>
+                    <span class="ftitle">{{ .title }}</span>
                     <p class="adress">{{ .address }}</p>
                     <span>{{ .tel }}</span><br>
                     <a href="{{ .url }}" >{{ .text }}</a>

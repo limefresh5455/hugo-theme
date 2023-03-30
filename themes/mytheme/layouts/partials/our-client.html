@@ -14,13 +14,11 @@
         {{ range .Site.Data.ourclient }}
             <div class="feaItem">
                 <a href="{{ .url }}" >
-                    <img src="{{ .image }}" style="width:100%" alt="{{.alt}}">   
+                    <img src="{{ .image }}" width="160" height="30" alt="{{.alt}}">   
                 </a>        
           </div>
         {{ end }}
     </div>
-
-
 </div>    
 {{ end }}
 {{ end }}
